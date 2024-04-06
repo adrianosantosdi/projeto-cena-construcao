@@ -1,0 +1,245 @@
+:root {
+    --color-cinza: #D6D6D6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-cinza);
+}
+
+.bg-form {
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    background: url('../img/bg-form.jpg') no-repeat left center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-form h2 {
+    text-transform: uppercase;
+}
+
+.bg-form label {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 50px;
+}
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    border: none;
+    background-color: rgb(50, 50, 250);
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    
+} 
+
+.bg-form p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 40%;
+    height: 680px;
+    border: 1px solid #000;
+    background-color: #FFF;
+    position: absolute;
+    right: 0;
+    margin: 10px auto;
+    margin-right: 5px;
+}
+
+.form h2 {
+    background-color: #dddddd;
+    font-size: 1rem;
+    color: #808080;
+    padding: 30px;
+    
+}
+
+.content-title {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #eeeeee;
+}
+
+.content-title h2 {
+    width: 100%;
+    margin-top: 6.25rem;
+    margin-bottom: 1rem;
+    padding: 30px;
+    text-align: center;
+}
+
+.content-title p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8.25rem;
+}
+
+.section-imoveis {
+    width: 80%;
+    height: 500px;
+    margin: 8px auto;
+    display: flex;
+}
+
+.content-texto {
+    background-color: rgb(195, 252, 233);
+    color: #808080;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.texto-grande {
+    width: 100%;
+}
+
+.imagem-imoveis img {
+    width: 100%;
+    height: 100%;
+}
+
+.rodape {
+    width: 100%;
+    height: 70px;
+    margin-top: -8px;
+    background-color: #D6D6D6;
+    padding: 20px;
+}
+
+.rodape p {
+    text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+
+    .form {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        display: block;
+        width: 100%;
+        margin-right: 5px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .btn button {
+        padding-top: 5px;
+    }
+
+    .imagem-imoveis img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .header {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .header__logo1 {
+        margin-bottom: 3.125rem;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 40%;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 15px
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px auto;
+    }
+
+    label {
+        display: block;
+        margin-left: -300px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        display: block;
+        width: 99%;
+        height: 50px;
+    }
+ 
+    .bg-form .btn {
+        width: 99%;
+    }
+
+    .section-imoveis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem-imoveis {
+        width: 100%;
+        height: 100%;
+    }
+  
+}
